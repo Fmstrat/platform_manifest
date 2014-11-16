@@ -2,7 +2,9 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".." />
+           fetch="https://android.googlesource.com/" />
+  <remote  name="nowsci"
+           fetch="https://github.com/" />
   <default revision="refs/tags/android-5.0.0_r6"
            remote="aosp"
            sync-j="4" />
@@ -485,7 +487,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,tradefed" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
-  <project path="system/core" name="platform/system/core" groups="pdk" />
+  <project path="system/core" name="Fmstrat/platform_system_core" groups="pdk" remote="github" revision="nowsci-5.0.0_r6" />
   <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
